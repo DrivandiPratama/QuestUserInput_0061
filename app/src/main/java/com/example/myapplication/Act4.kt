@@ -26,6 +26,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 
 @Composable
 fun FormDataDiri(modifier: Modifier){
@@ -81,7 +83,7 @@ fun FormDataDiri(modifier: Modifier){
                 dimensionResource(R.dimen.padding_medium), top = dimensionResource(
                     id = R.dimen.padding_medium
                 )),
-            thickness = dimensionResource(1dp),
+            thickness = dimensionResource(R.dimen.divider_tipis),
             color = Color.DarkGray
         )
         Button(
@@ -94,7 +96,7 @@ fun FormDataDiri(modifier: Modifier){
                 alamat=textAlamat
             }
         ) {
-            Text(stringResource("Submit"))
+            Text(stringResource(R.string.submit))
         }
         Divider(
             modifier = Modifier.padding(bottom =
