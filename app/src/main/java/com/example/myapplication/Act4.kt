@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
@@ -36,10 +37,12 @@ fun FormDataDiri(modifier: Modifier){
             modifier = Modifier.width(250.dp),
             label = { Text(text = "Nama Lengkap") },
             onValueChange = {
-                textNama
+                textNama = it
             }
         )
+        Row(
 
+        ) { }
     }
 
 }
